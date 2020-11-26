@@ -9,14 +9,14 @@ pipeline {
    parameters {
      string(
        name: 'YOURNAME', 
-       defaultValue: params.YOURNAME ?:'world',
+       defaultValue: 'world',
        description: 'Name to greet'
      )
    }
 
    stages {
 
-     stage('Say Goodbye Forever') {
+     stage('Say Goodbye') {
          steps {
            echo "Goodbye ${params.YOURNAME}.  Everything sucks!"
          }
