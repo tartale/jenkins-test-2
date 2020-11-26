@@ -16,7 +16,7 @@ pipeline {
 
    stages {
 
-     stage('Say Goodbye') {
+     stage('Say Goodbye Forever') {
          steps {
            echo "Goodbye ${params.YOURNAME}.  Everything sucks!"
          }
