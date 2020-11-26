@@ -1,4 +1,3 @@
-# declarative pipeline
 pipeline {
    agent any
    options {
