@@ -6,14 +6,6 @@ pipeline {
        timeout(time: 2, unit: 'HOURS')
    }
 
-   parameters {
-     string(
-       name: 'YOURNAME', 
-       defaultValue: params.YOURNAME ?:'world',
-       description: 'Name to greet'
-     )
-   }
-
    stages {
 
      stage('Say Goodbye') {
