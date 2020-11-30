@@ -10,7 +10,7 @@ pipeline {
 
      stage('Say Goodbye') {
          steps {
-           echo "Goodbye ${params.YOURNAME}.  Everything sucks!"
+           echo "Goodbye ${env.YOURNAME}.  Everything sucks!"
          }
      }
    }
